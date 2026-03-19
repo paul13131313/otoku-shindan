@@ -73,7 +73,7 @@ export async function POST(request: Request) {
     const userMessage = `以下がユーザーの回答です:\n${JSON.stringify(answers, null, 2)}`;
 
     const response = await client.messages.create({
-      model: "claude-haiku-4-5-20251001",
+      model: "claude-sonnet-4-20250514",
       max_tokens: 2000,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: userMessage }],
