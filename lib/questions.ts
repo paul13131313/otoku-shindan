@@ -73,10 +73,10 @@ export const questions: Question[] = [
     chapterTitle: "お金の使い方",
     text: "スマホキャリアは？",
     choices: [
-      "docomo",
-      "au",
-      "SoftBank",
-      "楽天モバイル・格安SIM",
+      "大手キャリア（docomo / au / SoftBank）",
+      "サブブランド（ahamo / povo / LINEMO / UQ / Y!mobile）",
+      "楽天モバイル",
+      "格安SIM（mineo / IIJmio / 日本通信など）",
     ],
   },
   {
