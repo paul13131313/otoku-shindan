@@ -48,7 +48,7 @@ export default function Home() {
         <p className="text-base sm:text-lg text-[var(--text-dim)] mb-10 leading-relaxed">
           クレカ・投資・節税・通信費・マイル。
           <br />
-          15の質問で、おトクの取りこぼしを完全診断。
+          20の質問で、おトクの取りこぼしを完全診断。
         </p>
 
         <Link

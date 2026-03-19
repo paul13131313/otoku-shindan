@@ -14,6 +14,7 @@ interface Recommendation {
   title: string;
   impact: string;
   detail: string;
+  caveat?: string;
 }
 
 interface DiagnosisResult {
@@ -247,6 +248,11 @@ export default function ResultPage() {
               <p className="text-xs text-[var(--text-dim)] leading-relaxed">
                 {rec.detail}
               </p>
+              {rec.caveat && (
+                <p className="text-xs leading-relaxed mt-2 px-3 py-2 rounded-lg" style={{ background: "rgba(255,255,255,0.05)", color: "#aaa" }}>
+                  ⚠ {rec.caveat}
+                </p>
+              )}
             </div>
           ))}
         </div>
