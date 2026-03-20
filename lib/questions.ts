@@ -60,6 +60,7 @@ export const questions: Question[] = [
       "三井住友カードNL（一般）",
       "三井住友ゴールドNL",
       "三井住友プラチナプリファード",
+      "JALカード / ANAカード",
       "PayPayカード",
       "JCBカードW",
       "その他のカード",
@@ -246,12 +247,11 @@ export const questions: Question[] = [
     id: "q12",
     chapter: "CHAPTER 4",
     chapterTitle: "投資・節税",
-    text: "保険はどうしている？",
+    text: "生命保険の種類は？（医療保険は除く）",
     choices: [
       "貯蓄型・終身保険に入っている",
-      "掛け捨て生命保険のみ",
-      "医療保険のみ",
-      "ほぼ未加入",
+      "掛け捨て（定期）生命保険に入っている",
+      "生命保険には入っていない",
     ],
   },
 
