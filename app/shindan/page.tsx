@@ -17,7 +17,12 @@ export default function ShindanPage() {
   const totalSteps = activeQuestions.length;
   const progress = ((currentStep + 1) / totalSteps) * 100;
 
+  const [isProcessing, setIsProcessing] = useState(false);
+
   const handleChoice = async (choice: string) => {
+    if (isProcessing) return;
+    setIsProcessing(true);
+
     const newAnswers = { ...answers, [currentQuestion.id]: choice };
     setAnswers(newAnswers);
 
@@ -51,6 +56,7 @@ export default function ShindanPage() {
     setTimeout(() => {
       setCurrentStep((prev) => prev + 1);
       setSlideDirection("enter");
+      setIsProcessing(false);
     }, 200);
   };
 
